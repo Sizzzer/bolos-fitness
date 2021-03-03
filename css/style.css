@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h3{
+    font-family: 'Noto Sans JP';
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 100;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+.texto-centro{
+    text-align: center;
+}
+.texto{
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+    line-height: 120%;
+}
+body{
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-weight: 200;
+    color: #fff;
+    background-color: #4E0D13;
+}
+/******************* TOPO/CAPA *******************/
+#container-topo{
+    background: url(../images/capa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+#logo{
+    min-width: 200px;
+    min-height: 200px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#logo img{
+    width: 100%;
+}
+#menu-topo ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.menu-topo-itens a{
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #982743;
+    border-radius: 5px;
+}
+.menu-topo-itens a:hover{
+    color: #982743;
+    background-color: #fff;
+    
+}
+#texto-destaque{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 40%;
+}
+#texto-destaque h1{
+    font-weight: 400;
+    font-size: 70px;
+    border-bottom: 3px solid #fff;
+    padding: 35px 30px;
+}
+#texto-destaque h2{
+    font-family: 'Noto Sans JP';
+    font-weight: 300;
+    font-size: 40px;
+}
+/******************* CONTAINER-MAIN *******************/
+#container-main{
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/******************* DESTAQUE *******************/
+#destaques{
+    position: relative;
+    transform: translate(-50%, -40%);
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.destaque{
+    background-color: #A38F77;
+    max-width: 300px;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #070707cc;
+}
+.circulo{
+    background-color: #2E3C47;
+    position: relative;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destaque img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.destaque p{
+    margin: -30px 20px 20px 20px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 150%;
+}
+/******************* MAIN *******************/
+/******************* QUEM SOU *******************/
+#quem-sou{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+#quem-sou div{
+    width: 50%;
+}
+#quem-sou img{
+    width: 45%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000;
+}
+/******************* BOLOS *******************/
+#bolos{
+    background-color: #fff;
+    color: #4E0D13;
+    height: 200px;
+}
+#bolos h2{
+    font-family: 'Noto Sans JP';
+    font-size: 60px;
+    text-align: center;
+    font-weight: 100;
+    border-bottom: 1px solid #4E0D13;
+    letter-spacing: 10px;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
