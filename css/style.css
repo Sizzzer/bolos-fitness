@@ -160,7 +160,14 @@ header{
 #bolos{
     background-color: #fff;
     color: #4E0D13;
-    height: 200px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+#bolos>div{
+    margin: 0 20px;
+    column-count: 2;
+    column-width: 300px;
+    column-gap: 20px;
 }
 #bolos h2{
     font-family: 'Noto Sans JP';
@@ -169,7 +176,26 @@ header{
     font-weight: 100;
     border-bottom: 1px solid #4E0D13;
     letter-spacing: 10px;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 10px;
+    column-span: all;
+    margin-bottom: 20px;
+}
+.bolo{
+    margin-bottom: 20px;
+    break-inside: avoid;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #D24345;
+    border: 3px solid #9EAAB8;
+}
+.bolo img{
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+}
+.bolo h4{
+    color: #fff;
 }
