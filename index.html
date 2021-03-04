@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body >
-    <div id="container-topo">
-        <header>
+    <header>
+        <div id="container-topo">
             <div id="logo">
                 <img src="images/logo.jpg" alt="logo da marca">
             </div>
@@ -27,14 +27,15 @@
                         <a href="#">Entregas</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
 
         <div id="texto-destaque">
             <h1 class="texto-centro"> Bolos Fitness!</h1>
             <h2 class="texto-centro">Gostosos e saudáveis</h2>
         </div>
-    </div> <!-- Fim do container-topo -->
-    <div id="container-main">
+    </header> <!-- Fim do header -->
+
+    <main>
         <section id="destaques">
 
             <div class="destaque" id="d1">
@@ -59,7 +60,7 @@
             </div>
     
         </section> <!-- Fim dos destaques-->
-        <main>
+        <div id="container-main">
             <section id="quem-sou">
                 <div>
                     <h3>Quem sou?</h3>
@@ -115,24 +116,28 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="bolo">
+                        <div class="bolo" id="bolo2">
                             <img src="images/bolo5.jpg" alt="">
-                            <h4 class="texto-bolo">Bolo 08</h4>
+                            <h4 class="texto-bolo">Outro modelo</h4>
                         </div>
                     </a>
                 </div>
             </section> <!-- Fim do bolos -->
 
             <section id="entregas">
-                <h3>Onde entregamos?</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.2462332505247!2d-43.316319947125365!3d-22.871581197981342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997cda4d2f329f%3A0xf52e04eb1e71a040!2sCavalcante%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1614815540190!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div>
+                    <h3>Entregas</h3>
+                    <p><span class="n">Horários:</span> Entregamos de Segunda a Sexta, entre 10h e 22h</p>
+                    <p><span class="n">Locais:</span> Cavalcanti e  Bairros próximos</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29408.835534860504!2d-43.32864253261992!3d-22.872599943994047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997cda4d2f329f%3A0xf52e04eb1e71a040!2sCavalcante%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1614829210606!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </section> <!-- Fim do entregas -->
             
-        </main>
-        <div id="contato-fixo">
-        
         </div>
-    </div> <!-- Fim do container-main -->
+    </main> <!-- Fim do main -->
+
+    <a href="https://api.whatsapp.com/send?phone=55210000000000&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20uma%20encomenda!" target="_blank"><img src="images/whats-w.png" alt="" id="contato-fixo"></a>
+    
     <footer>
 
     </footer>
