@@ -1,10 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -48,8 +56,12 @@ header{
     height: 100vh;
 }
 #container-topo{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 #logo{
     min-width: 100px;
@@ -66,8 +78,11 @@ header{
 }
 #menu-topo ul{
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 40px;
     margin-right: 10px;
 }
@@ -97,7 +112,9 @@ header{
 }
 #texto-destaque{
     position: absolute;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     left: 50%;
     top: 40vh;
     width: 100%;
@@ -105,7 +122,6 @@ header{
 #texto-destaque h1{
     font-weight: 400;
     font-size: 70px;
-    font-size-adjust: ;
     border-bottom: 3px solid #fff;
     width: 50vw;
     padding: 2vw 0;
@@ -127,10 +143,16 @@ main{
 /******************* BENEFÍCIOS *******************/
 #beneficios{
     position: relative;
-    transform: translate(-50%, -40%);
+    -webkit-transform: translate(-50%, -40%);
+        -ms-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
     left: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 30px;
 }
 .beneficio{
@@ -138,24 +160,34 @@ main{
     max-width: 300px;
     font-weight: 500;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #070707cc;
+    -webkit-box-shadow: 5px 5px 10px #070707cc;
+            box-shadow: 5px 5px 10px #070707cc;
 }
 .circulo{
     background-color: #2E3C47;
     position: relative;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     left: 50%;
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .beneficio img{
     width: 50px;
     height: 50px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .beneficio p{
     margin: -30px 20px 20px 20px;
@@ -167,10 +199,19 @@ main{
 /******************* MAIN *******************/
 /******************* QUEM SOU *******************/
 #quem-sou{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 70px;
 }
 #quem-sou div{
@@ -179,7 +220,8 @@ main{
 #quem-sou img{
     width: 45%;
     border-radius: 5px;
-    box-shadow: 5px 5px 10px #000;
+    -webkit-box-shadow: 5px 5px 10px #000;
+            box-shadow: 5px 5px 10px #000;
 }
 /******************* BOLOS *******************/
 #bolos{
@@ -190,9 +232,15 @@ main{
 }
 #bolos>div{
     margin: 0 20px;
-    column-count: 2;
-    column-width: 350px;
-    column-gap: 40px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-width: 350px;
+       -moz-column-width: 350px;
+            column-width: 350px;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
 }
 #bolos h2{
     font-family: 'Noto Sans JP';
@@ -204,11 +252,17 @@ main{
     width: 100%;
     margin: 0 auto;
     padding-bottom: 10px;
-    column-span: all;
+    -webkit-column-span: all;
+       -moz-column-span: all;
+            column-span: all;
     margin-bottom: 50px;
 }
 .bolo{
-    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+       -moz-column-break-inside: avoid;
+            break-inside: avoid;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 160px;
     border-radius: 10px;
@@ -219,7 +273,8 @@ main{
 }
 .bolo img{
     width: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .texto-bolo{
     color: #2E3C47;
@@ -227,14 +282,22 @@ main{
     font-weight: 400;
     font-size: 40px;
     margin: 0 auto;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     line-height: normal;
 }
 /******************* ENTREGAS *******************/
 #entregas{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 70px;
 }
 #texto-entregas{
@@ -249,7 +312,8 @@ main{
 #entregas iframe{
     width: 50%;
     border-radius: 5px;
-    box-shadow: 5px 5px 10px #000;
+    -webkit-box-shadow: 5px 5px 10px #000;
+            box-shadow: 5px 5px 10px #000;
 }
 /******************* WHATSAPP *******************/
 #contato-fixo{
@@ -269,10 +333,16 @@ footer{
 #social{
     height: 100%;
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     gap: 20px;
 }
 #social img{
@@ -285,10 +355,14 @@ footer{
     /******************* BENEFÍCIOS SLIDER *******************/
     #beneficios{
         height: 230px;
-        align-items: flex-end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
         width: 80.5vw;
         gap: 10vw;
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         overflow-x: scroll;
         margin: 0;
     }
@@ -296,8 +370,10 @@ footer{
         height: 180px;
         max-width: 80vw;
         width: 80vw;
-        flex-shrink: 0;
-        box-shadow: 5px -5px 10px #070707cc;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+        -webkit-box-shadow: 5px -5px 10px #070707cc;
+                box-shadow: 5px -5px 10px #070707cc;
     }
     /******************* TÍTULO *******************/
     #texto-destaque{
@@ -317,7 +393,10 @@ footer{
         z-index: 1;
     }
     #menu-topo ul{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         z-index: 10;
         margin: 0;
         width: 100vw;
@@ -376,8 +455,13 @@ footer{
 @media screen and (max-width: 650px){
     /******************* TEXTOS E IMAGENS *******************/
     #quem-sou{
-        flex-direction: column-reverse;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     #quem-sou div{
         width: 80%;
@@ -386,8 +470,13 @@ footer{
         width: 80%;
     }
     #entregas{
-        justify-content: center;
-        flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     #texto-entregas{
         width: 80%;
