@@ -59,7 +59,7 @@ header{
     border-radius: 50%;
     overflow: hidden;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 2vw;
 }
 #logo img{
     width: 100%;
@@ -82,11 +82,25 @@ header{
     color: #4E0D13;
     background-color: #fff;
 }
+.menu-topo-itens a:visited{
+    background-color: #4E0D13;
+    color: #fff;
+}
+#mobile{
+    display: none;
+}
+#menu-mobile{
+    display: none;
+}
+#menu-mobile-x{
+    display: none;
+}
 #texto-destaque{
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 40vh;
+    width: 100%;
 }
 #texto-destaque h1{
     font-weight: 400;
@@ -95,12 +109,14 @@ header{
     border-bottom: 3px solid #fff;
     width: 50vw;
     padding: 2vw 0;
-    margin: 2vw 0;
+    margin: 0 auto;
+    width: 80%;
 }
 #texto-destaque h2{
     font-family: 'Noto Sans JP';
     font-weight: 300;
     font-size: 40px;
+    margin: 2vw 0;
 }
 /******************* CONTAINER-MAIN *******************/
 main{
@@ -108,8 +124,8 @@ main{
     margin: 0 auto;
     padding: 0 15px;
 }
-/******************* DESTAQUE *******************/
-#destaques{
+/******************* BENEFÍCIOS *******************/
+#beneficios{
     position: relative;
     transform: translate(-50%, -40%);
     left: 50%;
@@ -117,7 +133,7 @@ main{
     justify-content: center;
     gap: 30px;
 }
-.destaque{
+.beneficio{
     background-color: #A38F77;
     max-width: 300px;
     font-weight: 500;
@@ -136,12 +152,12 @@ main{
     justify-content: center;
     align-items: center;
 }
-.destaque img{
+.beneficio img{
     width: 50px;
     height: 50px;
     object-fit: cover;
 }
-.destaque p{
+.beneficio p{
     margin: -30px 20px 20px 20px;
     text-align: center;
     font-weight: 200;
@@ -214,19 +230,6 @@ main{
     align-self: center;
     line-height: normal;
 }
-#bolo2{
-    display: block;
-    position: relative;
-}
-#bolo2 h4{
-    color: #000;
-    position: absolute;
-    top: 0;
-    right: 10px;
-}
-#bolo2 img{
-    width: 100%;
-}
 /******************* ENTREGAS *******************/
 #entregas{
     display: flex;
@@ -234,7 +237,7 @@ main{
     align-items: center;
     margin-bottom: 70px;
 }
-#entregas div{
+#texto-entregas{
     width: 45%;
 }
 #entregas p{
@@ -276,4 +279,140 @@ footer{
     width: 60px;
     border: 2px solid #4E0D13;
     border-radius: 50%;
+}
+/******************* RESPONSIVIDADE *******************/
+@media screen and (max-width: 740px){
+    /******************* BENEFÍCIOS SLIDER *******************/
+    #beneficios{
+        height: 230px;
+        align-items: flex-end;
+        width: 80.5vw;
+        gap: 10vw;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        margin: 0;
+    }
+    .beneficio{
+        height: 180px;
+        max-width: 80vw;
+        width: 80vw;
+        flex-shrink: 0;
+        box-shadow: 5px -5px 10px #070707cc;
+    }
+    /******************* TÍTULO *******************/
+    #texto-destaque{
+        top: 50%;
+    }
+    #texto-destaque h1{
+        font-size: 10vw;
+    }
+    #texto-destaque h2{
+        font-size: 6vw;
+    }
+    /******************* MENU MOBILE *******************/
+    #menu-topo{
+        display: none;
+        position: fixed;
+        top: 50px;
+        z-index: 1;
+    }
+    #menu-topo ul{
+        flex-direction: column;
+        z-index: 10;
+        margin: 0;
+        width: 100vw;
+    }
+    .menu-topo-itens a{
+        display: block;
+        border-radius: 0;
+        margin: 0;
+        padding: 20px;
+        width: 100vw;
+        background-color: #2E3C47ee;
+    }
+    .menu-topo-itens a:hover{
+        color: #4E0D13;
+        background-color: #fff;
+    }
+    .menu-topo-itens a:visited{
+        background-color: #2E3C47ee;
+        color: #fff;
+    }
+    #menu-mobile{
+        display: block;
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        top: 10px;
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #2E3C47ee;
+        position: fixed;
+        z-index: 1;
+        cursor: pointer;
+    }
+    #mobile:checked ~ #menu-topo{
+        display: block;
+    }
+    #mobile:checked ~ #menu-mobile{
+        display: none;
+    }
+    #mobile:checked ~ #menu-mobile-x{
+        display: block;
+        width: 40px;
+        height: 40px;
+        right: 10px;
+        top: 10px;
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #2E3C47ee;
+        position: fixed;
+        z-index: 1;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 650px){
+    /******************* TEXTOS E IMAGENS *******************/
+    #quem-sou{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #quem-sou div{
+        width: 80%;
+    }
+    #quem-sou img{
+        width: 80%;
+    }
+    #entregas{
+        justify-content: center;
+        flex-direction: column;
+    }
+    #texto-entregas{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    #entregas p{
+        width: 80%;
+    }
+    #entregas iframe{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 560px){
+    /******************* BOLOS *******************/
+    .bolo{
+        display: block;
+        position: relative;
+    }
+    .bolo h4{
+        color: #000;
+        position: absolute;
+        top: 0;
+        right: 10px;
+    }
+    .bolo img{
+        width: 100%;
+    }
 }

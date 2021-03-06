@@ -15,18 +15,25 @@
             <div id="logo">
                 <img src="images/logo.jpg" alt="logo da marca">
             </div>
+
+            <input type="checkbox" name="mobile" id="mobile">
+            <label id="menu-mobile" for="mobile">☰</label>
+            <label id="menu-mobile-x" for="mobile">✕</label>
+
             <nav id="menu-topo">
                 <ul>
-                    <li class="menu-topo-itens">
-                        <a href="#destaques">Benefícios</a></li>
                     <li class="menu-topo-itens">
                         <a href="#quem-sou">Quem Sou</a></li>
                     <li class="menu-topo-itens">
                         <a href="#bolos">Bolos</a></li>
                     <li class="menu-topo-itens">
                         <a href="#entregas">Entregas</a></li>
+                    <li class="menu-topo-itens">
+                        <a href="#social">Contatos</a></li>
                 </ul>
             </nav>
+
+            
         </div>
 
         <div id="texto-destaque">
@@ -36,23 +43,23 @@
     </header> <!-- Fim do header -->
 
     <main>
-        <section id="destaques">
+        <section id="beneficios">
 
-            <div class="destaque" id="d1">
+            <div class="beneficio" id="d1">
                 <div class="circulo">
                     <img src="images/icon1.png" alt="icone de bolo">
                 </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
-            <div class="destaque" id="d2">
+            <div class="beneficio" id="d2">
                 <div class="circulo">
                     <img src="images/icon2.png" alt="icone de bolo">
                 </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
-            <div class="destaque" id="d3">
+            <div class="beneficio" id="d3">
                 <div class="circulo">
                     <img src="images/icon3.png" alt="icone de bolo">
                 </div>
@@ -116,7 +123,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="bolo" id="bolo2">
+                        <div class="bolo">
                             <img src="images/bolo1.jpg" alt="bolo de ...">
                             <h4 class="texto-bolo">Outro modelo</h4>
                         </div>
@@ -125,10 +132,12 @@
             </section> <!-- Fim do bolos -->
 
             <section id="entregas">
-                <div>
+                <div id="texto-entregas">
                     <h3>Entregas</h3>
-                    <p><span class="n">Horários:</span> Entregamos de Segunda a Sexta, entre 10h e 22h</p>
-                    <p><span class="n">Locais:</span> Cavalcanti e  Bairros próximos</p>
+                    <div>
+                        <p><span class="n">Horários:</span> Entregamos de Segunda a Sexta, entre 10h e 22h</p>
+                        <p><span class="n">Locais:</span> Cavalcanti e  Bairros próximos</p>
+                    </div>
                 </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29408.835534860504!2d-43.32864253261992!3d-22.872599943994047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997cda4d2f329f%3A0xf52e04eb1e71a040!2sCavalcante%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1614829210606!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </section> <!-- Fim do entregas -->
@@ -141,10 +150,9 @@
     
     <footer>
         <ul id="social">
-            <li><a href="#"><img src="images/social/facebook-w.png" alt=""></a></li>
-            <li><a href="#"><img src="images/social/insta-w.png" alt=""></a></li>
-            <li><a href="#"><img src="images/social/twitter-w.png" alt=""></a></li>
-            <li><a href="#"><img src="images/social/linkedin-w.png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="images/social/facebook-w.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="images/social/insta-w.png" alt=""></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="images/social/twitter-w.png" alt=""></a></li>
         </ul>
     </footer>
 
